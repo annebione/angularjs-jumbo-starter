@@ -1,0 +1,49 @@
+    <ui-view>
+     <div layout="row" ui-view layout-xs="columm" class="molecule--main-container">
+        <div flex="30" flex-offset="25" class="molecule--call-action">
+         <img class="img-responsive" src="./imgs/screen.webp">
+          <h4 class="atom-tr-heading">Obtenha o aplicativo.</h4>
+          <div layout="row">
+            <div class="atom-get-app-store"></div>
+            <div class="atom-get-googleplay"></div>
+          </div>
+        </div>
+        <div flex="30" layout="column" class="organism---login-box t-register-box">
+          <div class="molecule--login-content">
+            <img src="./imgs/jumbo-index.webp" class="main-logo" flex-offset="30">
+            <md-button flex-offset="15" class="md-raised atom-round-button fb-bg t-pad-right">
+              <md-icon aria-hidden="true" class="zmdi zmdi-facebook fb-login"></md-icon>
+              Cadastrar com o Facebook
+            </md-button>
+            <form class="molecule--login t-register-form" name="signupForm">
+               <h2>Preencha seus dados</h2>
+               <small>Todos os campos são obrigatórios</small>
+              <md-input-container flex="80" flex-offset="10" class="md-block a-register-box">
+                <label>Nome</label>
+                <input ng-model="register.user.fname" required name="fname" type="text">
+              </md-input-container>
+              <md-input-container flex="80" flex-offset="10" class="md-block a-register-box">
+                <label>Sobrenome</label>
+                <input ng-model="register.user.lname" required name="lname" type="text">
+              </md-input-container>
+              <md-input-container flex="80" flex-offset="10" class="md-block a-register-box">
+                <label>Email</label>
+                <input ng-model="register.user.email" required name="email" type="email">
+              </md-input-container>
+              <md-input-container flex="80" flex-offset="10" class="md-block a-register-box">
+                <label>Senha</label>
+                <input ng-model="register.user.password" required name="password" type="password">
+              </md-input-container>
+              <md-input-container flex="80" flex-offset="10" class="md-block a-register-box">
+                <label>Confirmar senha</label>
+                <input ng-model="register.user.confirmPassword" required name="confirmPassword" type="password" match="register.user.password">
+              </md-input-container>
+              <md-button type="submit" flex-offset="15" ng-click="register.save();" class="md-raised t-login-btn atom-round-button">
+                Cadastrar
+              </md-button>
+              <h4 class="a-login-fheading" flex-offset="20"> Já possui uma conta? <span class="t-focus-theading"><a ui-sref="jumbo" class="link a-login-link">Faça login.</a></span></h4>
+            </form>         
+          </div>
+        </div>
+      </div>
+      </ui-view>

@@ -1,0 +1,70 @@
+<div ui-view>
+  <menu-bars>      
+  </menu-bars>
+      <div layout="row" class="wrap chat-wrap" flex="100" layout-align="center start">
+        <div flex="100" class="a-center-text-wrapper">
+          <h2 class="a-second-heading a-third-heading">
+            Faça sua pergunta em
+            <br>
+            <span class="a-jumbo-heading a-jumbo-big-heading">C h a t</span>
+          </h2>
+        </div>
+        <br>
+        <div flex="80" layout="row" layout-align="center center" class="a-center-text-wrapper a-jumbotron">
+          <p class="a-jumbo-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus auctor convallis. Etiam mi lectus, pellentesque et risus sit amet, hendrerit pulvinar nisi. Vivamus feugiat porta dolor, sed vulputate elit dignissim aliquet. Aenean at ullamcorper lectus, nec pulvinar eros. Donec consectetur ligula eu leo porta bibendum.
+          </p>
+        </div>
+        <div flex="80" layout="row" layout-align="center center" class="a-center-text-wrapper" style="margin-top: 80px">
+          <md-button  class="md-raised atom-round-button t-pad-right a-save-question">
+              SALVAR PERGUNTA
+          </md-button>
+          <md-button class="md-raised atom-round-button t-pad-right a-send-question" type="submit">
+              ENVIAR PERGUNTA
+          </md-button>
+        </div>
+        <div flex="80" layout="row" layout-align="start center" class="a-center-text-wrapper" style="margin-top: 80px">
+           <div flex="30">
+             <h6 class="a-jumbo-six-heading">Conteúdo complementar (Opcional)</h6>
+           </div>
+           <div flex="40" flex-offset="0" layout="row">
+             <ul layout="row" layout-align="center" class="molecule--footer-menu">
+               <li>
+                 <div class="a-small-icon-list a-extra-text">
+                    <i class="fa fa-comment a-small-icon" style="margin-top: 12px" aria-hidden="true"></i>                
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-audio">
+                    <i class="fa fa-microphone a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-video">
+                    <i class="fa fa-video-camera a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-pic">
+                    <i class="fa fa-camera a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+             </ul>
+           </div>
+        </div>
+        <div flex="100" layout="row" layout-align="center center" class="a-center-text-wrapper molecule--archive-slider" style="margin-top: 80px">
+           <ul flex="100" layout="row" layout-align="center center">
+              <li flex="30" class="a-archive-pagination" dir-paginate="item in chat.items | itemsPerPage: 3">
+                <span class="t-padding-placeholder">{{ item }}</span>
+              </li>
+           </ul>
+           <dir-pagination-controls flex="100" layout="row" layout-align="center center"></dir-pagination-controls>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+

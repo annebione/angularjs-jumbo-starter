@@ -1,0 +1,133 @@
+@import: url('_base/_colours.css')
+
+
+html,
+body {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.molecule--main-container {
+    width: 100%;
+	min-height: 100vh;
+	padding: 0px 10px 0px 10px;
+	background-color: #f7f7f7;
+	flex-wrap: wrap;
+}
+
+
+.molecule-top-bar {
+	background-color: green;
+}
+.atom-tr-heading {
+	color: #b6b6b6;
+	text-align: center;
+	margin-right: 120px;
+}
+
+.organism---login-box {
+	height: 555px;
+	background-color: #fff
+}
+.molecule--login-content {
+	padding-top: 30px;
+}
+.main-logo {
+	width: 45%;
+	padding-bottom: 10px;
+}
+.fb-login {
+	padding-top: 8px;
+}
+.atom-round-button {
+	border-radius: 25px;
+}
+.t-pad-right {
+	padding-right: 15px;
+}
+button.fb-bg:hover {
+	background-color:#3B5998 !important;
+	color: #fff;
+}button.fb-bg:hover > .fb-login {
+	color: #fff;
+}
+button.fb-bg:hover {
+	background-color:#3B5998 !important;
+	color: #fff;
+}
+button.fb-bg {
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 0px solid black !important;
+}
+.t-login-btn.atom-round-button {
+	width: 280px;
+	background-color: $primary-green;
+	color: #fff;
+}
+.t-login-btn.atom-round-button:hover {
+	width: 280px;
+	color: #b1d22b;
+}
+.forgot-pass {
+	display: block;
+	position: relative;
+	right: 10px;
+	top: 5px;
+}
+.atom-third-heading {
+	text-align: center;
+	color: #d1d1d1;
+}
+.t-focus-theading {
+	color: #666666;
+	font-weight: 700;
+}
+.t-create-acc {
+	width: 280px;
+	border: 1px solid #666666;
+	transition: 0.3s ease;
+}
+.t-create-acc:hover {
+	color: #fff;
+	background-color: #666666 !important;
+	border: 1px solid #fff;
+}
+.molecule--call-action {
+	padding-top: 50px;
+}
+.atom-get-app-store {
+	width: 129px;
+	height: 39px;
+	margin: 0px 10px 10px 10px;
+	background: url('../../imgs/app-store.webp') no-repeat;
+	background-size: contain;
+}
+.atom-get-googleplay {
+	width: 109px;
+	height: 39px;
+	margin: 0px 10px 10px 10px;
+	background: url('../../imgs/google-play.webp') no-repeat;
+	background-size: contain;
+}
+.molecule--footer-menu > li {
+	text-align: center;
+	margin: 0% 3% 0% 0%;
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: 700;
+	font-size: 0.8rem;
+	color: #b6b6b6;
+}
+.molecule--footer-menu {
+	text-align: center;
+}
+
+.molecule--footer-menu > li > a {
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: #b6b6b6;
+}
+.molecule--footer-menu > li > a:hover {
+	color: #b1d22b;
+}

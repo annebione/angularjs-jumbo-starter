@@ -1,0 +1,55 @@
+    <ui-view>
+     <div layout="row" layout-xs="columm" class="molecule--main-container">
+        <div flex="30" flex-offset="25" class="molecule--call-action">
+         <img class="img-responsive" src="./imgs/screen.webp">
+          <h4 class="atom-tr-heading">Obtenha o aplicativo.</h4>
+          <div layout="row">
+            <div class="atom-get-app-store"></div>
+            <div class="atom-get-googleplay"></div>
+          </div>
+        </div>
+        <div flex="30" layout="column" class="organism---login-box">
+          <div class="molecule--login-content">
+            <img src="./imgs/jumbo-index.webp" class="main-logo" flex-offset="30">
+            <md-button flex-offset="20" class="md-raised atom-round-button fb-bg t-pad-right" ng-click='login.facebook()'>
+              <md-icon aria-hidden="true" class="zmdi zmdi-facebook fb-login"></md-icon>
+              Entre com o Facebook
+            </md-button>
+            <h5 ng-if="login.userNotFound" style="color: #eb3c5e; text-align: center; transition: 400ms">Usuário ou senha inválidos.</h5>
+            <div ng-if="login.newUser" flex="80" style="background-color: #E1F0D1; height: 60px; border-radius: 10px; margin-bottom: 40px" flex-offset="10" layout-align="end end">
+              <p style="text-align: center; padding: 10px; color: #96ba3b">
+               Cadastro realizado com sucesso!<br>
+               Por favor faça login.  
+              </p>
+            </div>
+            <form class="molecule--login" name="loginForm">
+              <md-input-container flex="80" flex-offset="10" class="md-block">
+                <label>Usuário/Email</label>
+                <input ng-model="login.user.useremail" name="useremail" type="text">
+              </md-input-container>
+              <md-input-container flex="80" flex-offset="10" class="md-block" style="margin-bottom: 0">
+                <label>Senha</label>
+                <input ng-model="login.user.password" name="password" type="password">
+              </md-input-container>
+              <md-button type="submit" ng-click="login.auth()" flex-offset="15" style="background-color: #96ba3b" class="md-raised t-login-btn atom-round-button">
+                Entrar
+              </md-button>
+              <a class="link forgot-pass"  flex-offset="35"> Esqueci minha senha</a>
+            </form>
+            <h3 class="atom-third-heading">Ainda não tem uma conta? <br><span class="t-focus-theading">Crie agora!</span></h3>   
+            <md-button type="submit" flex-offset="15" ui-sref="jumbo.register" class="md-raised t-create-acc atom-round-button">
+                Criar conta
+            </md-button>            
+          </div>
+        </div>
+      </div>
+      <footer layout-align="center stretch" style="margin-top: -35px" flex="grow" class="organism--footer">
+        <ul layout="row" layout-align="center" flex-offset="5" flex="85" class="molecule--footer-menu">
+          <li><a ui-sref="register.jumbo">SOBRE NÓS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">TERMOS DE USO</a></i>
+          <li><a href="#">PRIVACIDADE</a></li>
+          <li><a href="#">IDIOMA</a></li>
+        </ul>
+      </footer>
+    </ui-view>

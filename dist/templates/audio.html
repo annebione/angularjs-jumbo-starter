@@ -1,0 +1,86 @@
+<div ui-view>
+  <menu-bars>      
+  </menu-bars>
+      <div layout="row" class="wrap chat-wrap" flex="100" layout-align="center start">
+        <div flex="100" class="a-center-text-wrapper">
+          <h2 class="a-second-heading a-third-heading">
+            Faça sua pergunta em
+            <br>
+            <span class="a-jumbo-heading a-jumbo-big-heading">Áudio</span>
+          </h2>
+        </div>
+        <br>
+        <div flex="50" layout="column" layout-align="center center" class="a-center-text-wrapper a-jumbotron a-jumbotron-large" style="margin-top: -50px">
+          <div layout="column" flex="100" layout-align="center center">
+            <h6 class="a-jumbo-six-heading" style="font-weight: bold; color: #757575; margin-bottom: 0">Pause</h6>
+            <h2 style="margin-top: 5px; color: #9E9E9E; font-size: 40px; font-weight: 300">00:40</h2>  
+          </div>
+          <div layout="row" flex="100" layout-align="center center">
+             <ul layout="row" layout-align="start" style="margin-bottom: 17px" class="molecule--footer-menu">
+               <li>
+                 <div class="a-small-icon-list a-extra-text" style="background-color: #bdbdbd;margin-bottom: 10px">
+                    <i class="fa fa-play a-small-icon" style="margin-top: 13px; margin-left: 4px" aria-hidden="true"></i>                
+                 </div>
+                 Replay
+               </li>
+              </ul>
+            <div class="molecule--teach a-icon-record a-center-text-wrapper">
+              <i class="fa fa-microphone a-teach-icon" aria-hidden="true" style="margin-top: 30px; margin-left: 20px"></i>
+            </div>
+             <ul layout="row" layout-align="start" class="molecule--footer-menu">
+               <li>
+                 <div class="a-small-icon-list a-extra-text" style="background-color: #bdbdbd; margin-left: -68%; margin-bottom: 10px">
+                    <i class="fa fa-close a-small-icon" style="margin-top: 12px;" aria-hidden="true"></i>
+                 </div>
+                  <span style="margin-left: -72px;">Cancelar</span>
+               </li>
+              </ul>
+          </div>
+        </div>
+        <div flex="30" layout="column" layout-align="center center" class="a-center-text-wrapper" style="margin-top: 60px">
+          <md-button  class="md-raised atom-round-button t-pad-right a-save-question">
+              SALVAR PERGUNTA
+          </md-button>
+          <md-button class="md-raised atom-round-button t-pad-right a-send-question">
+              ENVIAR PERGUNTA
+          </md-button>
+        </div>
+        <div flex="80" layout="row" layout-align="start center" class="a-center-text-wrapper" style="margin-top: 80px">
+           <div flex="30">
+             <h6 class="a-jumbo-six-heading">Conteúdo complementar (Opcional)</h6>
+           </div>
+           <div flex="40" flex-offset="0" layout="row">
+             <ul layout="row" layout-align="center" class="molecule--footer-menu">
+               <li>
+                 <div class="a-small-icon-list a-extra-text">
+                    <i class="fa fa-comment a-small-icon" style="margin-top: 12px" aria-hidden="true"></i>                
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-audio">
+                    <i class="fa fa-microphone a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-video">
+                    <i class="fa fa-video-camera a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+               <li>
+                 <div class="a-small-icon-list a-extra-pic">
+                    <i class="fa fa-camera a-small-icon" aria-hidden="true"></i>
+                 </div>
+               </li>
+             </ul>
+           </div>
+        </div>
+        <div flex="100" layout="row" layout-align="center center" class="a-center-text-wrapper molecule--archive-slider" style="margin-top: 80px">
+           <ul flex="100" layout="row" layout-align="center center">
+              <li flex="30" class="a-archive-pagination" dir-paginate="item in chat.items | itemsPerPage: 3">
+                <span class="t-padding-placeholder">{{ item }}</span>
+              </li>
+           </ul>
+           <dir-pagination-controls flex="100" layout="row" layout-align="center center"></dir-pagination-controls>
+        </div>
+      </div>
+</div>
